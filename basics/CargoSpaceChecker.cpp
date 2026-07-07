@@ -3,6 +3,8 @@ using namespace std;
 
 int main()
 {
+    cout << "---Cargo Space Checker---" << endl;
+
     int maxCargoSpace = 1000; // Maximum cargo space in cubic feet
     cout << "Maximum cargo space: " << maxCargoSpace << " cubic feet" << endl;
 
@@ -19,6 +21,13 @@ int main()
             continue;
         }
         sum += cargoItem;
+
+        if (sum > maxCargoSpace)
+        {
+            cout << "Warning: Cargo space exceeded!" << endl;
+            sum -= cargoItem;
+            break;
+        }
     }
     cout << "Total cargo space used: " << sum << " cubic feet" << endl;
     return 0;

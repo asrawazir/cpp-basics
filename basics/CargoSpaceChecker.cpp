@@ -9,7 +9,7 @@ int main()
     cout << "Maximum cargo space: " << maxCargoSpace << " cubic feet" << endl;
 
     int sum = 0;
-
+    int packageCount = 0;
     while (sum < maxCargoSpace)
     {
         int cargoItem;
@@ -28,7 +28,11 @@ int main()
             sum -= cargoItem;
             break;
         }
+        packageCount++;
     }
+    cout << "Details:" << endl;
     cout << "Total cargo space used: " << sum << " cubic feet" << endl;
+    cout << "Number of packages: " << packageCount << endl;
+    cout << "Remaining cargo space: " << (maxCargoSpace - sum) << " cubic feet" << endl;
     return 0;
 }

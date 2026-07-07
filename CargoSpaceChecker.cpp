@@ -13,7 +13,13 @@ int main()
         int cargoItem;
         cout << "Enter the size of the cargo item (in cubic feet): ";
         cin >> cargoItem;
+        if (cargoItem <= 0)
+        {
+            cout << "Invalid cargo item size. Please enter a positive value." << endl;
+            continue;
+        }
         sum += cargoItem;
     }
+    cout << "Total cargo space used: " << sum << " cubic feet" << endl;
     return 0;
 }

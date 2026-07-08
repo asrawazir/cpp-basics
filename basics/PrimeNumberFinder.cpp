@@ -17,5 +17,23 @@ int main()
         cout << "Starting number should be less than or equal to ending number." << endl;
         return 1;
     }
+
+    for(int num = start; num <= end; num++) {
+        bool isPrime = true;
+
+        if (num <= 1) {
+            isPrime = false;
+        } 
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            std::cout << num << " ";
+        }
+    }
     return 0;
 }

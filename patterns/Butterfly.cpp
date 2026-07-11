@@ -5,6 +5,7 @@ int main()
 {
     cout << "--- Butterfly Pattern ---" << endl;
 
+    //number of rows specifies each half of the butterfly pattern
     int rows;
     cout << "Enter the number of rows: ";
     cin >> rows;

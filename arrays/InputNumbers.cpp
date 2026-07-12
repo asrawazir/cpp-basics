@@ -10,7 +10,13 @@ int main()
     {
         cin >> numbers[i];
     }
+
+    cout << "The numbers you entered are: ";
+    for (int i = 0; i < 5; i++)
+    {
+        cout << numbers[i] << " ";
+    }
+    cout << endl;
+
     return 0;
-
-
 }

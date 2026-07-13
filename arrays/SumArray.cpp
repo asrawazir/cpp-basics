@@ -13,6 +13,13 @@ int main()
     {
         cin >> arr[i];
     }
-    
+
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += arr[i];
+    }
+    cout << "The sum of the elements in the array is: " << sum << endl;
+
     return 0;
 }

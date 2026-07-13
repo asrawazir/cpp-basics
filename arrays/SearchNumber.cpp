@@ -13,7 +13,11 @@ int main()
     {
         cin >> arr[i];
     }
-    
+    int searchNum;
+    cout << "Enter the number to search for: ";
+    cin >> searchNum;
+
+    bool found = false;
 
     return 0;
 }

@@ -27,5 +27,14 @@ int main()
         }
     }
 
+    if (found)
+    {
+        cout << searchNum << " is present in the array." << endl;
+    }
+    else
+    {
+        cout << searchNum << " is not present in the array." << endl;
+    }
+
     return 0;
 }

@@ -18,6 +18,14 @@ int main()
     cin >> searchNum;
 
     bool found = false;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == searchNum)
+        {
+            found = true;
+            break;
+        }
+    }
 
     return 0;
 }

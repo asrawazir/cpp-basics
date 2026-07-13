@@ -21,5 +21,8 @@ int main()
     }
     cout << "The sum of the elements in the array is: " << sum << endl;
     
+    double average = (double)sum / n;
+    cout << "The average of the elements in the array is: " << average << endl;
+    
     return 0;
 }

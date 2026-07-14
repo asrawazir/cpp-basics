@@ -17,6 +17,17 @@ int main()
     int target;
     cout << "Enter the element to count its occurrences: ";
     cin >> target;
+
+    int count = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == target)
+        {
+            count++;
+        }
+    }
+
+    cout << "The element " << target << " occurs " << count << " times in the array." << endl;
     
     return 0;
 }

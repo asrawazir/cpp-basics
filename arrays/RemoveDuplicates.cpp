@@ -39,5 +39,7 @@ int main()
     {
         cout << newArr[i] << " ";
     }
+    cout << endl;
+    
     return 0;
 }

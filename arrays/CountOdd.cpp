@@ -13,5 +13,14 @@ int main()
     {
         cin >> arr[i];
     }
+
+    int oddCount = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] % 2 != 0)
+        {
+            oddCount++;
+        }
+    }
     return 0;
 }

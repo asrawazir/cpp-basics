@@ -22,5 +22,8 @@ int main()
             oddCount++;
         }
     }
+    cout << "The number of odd elements in the array is: " << oddCount << endl;
+    
+
     return 0;
 }

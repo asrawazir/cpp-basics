@@ -13,6 +13,10 @@ int main()
     {
         cin >> arr[i];
     }
+
+    int target;
+    cout << "Enter the element to count its occurrences: ";
+    cin >> target;
     
     return 0;
 }

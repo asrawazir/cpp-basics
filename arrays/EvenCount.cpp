@@ -22,5 +22,8 @@ int main()
             evenCount++;
         }
     }
+
+    cout << "The number of even elements in the array is: " << evenCount << endl;
+    
     return 0;
 }

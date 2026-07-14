@@ -19,7 +19,13 @@ int main()
     {
         newArr[i] = arr[n - 1 - i];
     }
-    
+
+    cout << "Reversed array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << newArr[i] << " ";
+    }
+    cout << endl;
 
     return 0;
 }

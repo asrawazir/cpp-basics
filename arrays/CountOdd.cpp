@@ -24,6 +24,15 @@ int main()
     }
     cout << "The number of odd elements in the array is: " << oddCount << endl;
     
+    cout << "The odd elements in the array are: ";
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] % 2 != 0)
+        {
+            cout << arr[i] << " ";
+        }
+    }
+    cout << endl;
 
     return 0;
 }

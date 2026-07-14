@@ -24,6 +24,16 @@ int main()
     }
 
     cout << "The number of even elements in the array is: " << evenCount << endl;
+
+    cout << "The even elements in the array are: ";
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] % 2 == 0)
+        {
+            cout << arr[i] << " ";
+        }
+    }
+    cout << endl;
     
     return 0;
 }

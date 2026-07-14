@@ -33,5 +33,11 @@ int main()
             newArr[j++] = arr[i];
         }
     }
+
+    cout << "Array after removing duplicates: ";
+    for (int i = 0; i < j; i++)
+    {
+        cout << newArr[i] << " ";
+    }
     return 0;
 }

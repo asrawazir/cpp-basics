@@ -14,13 +14,12 @@ int main()
         cin >> arr[i];
     }
 
-    int evenCount = 0;
+    int newArr[n];
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] % 2 == 0)
-        {
-            evenCount++;
-        }
+        newArr[i] = arr[n - 1 - i];
     }
+    
+
     return 0;
 }

@@ -21,5 +21,10 @@ int main()
     // Right rotate the array by d positions
     d = d % n; // Handle cases where d is greater than n
     int temp[d];
+
+    for (int i = 0; i < d; i++)
+    {
+        temp[i] = arr[n - d + i];
+    }
     return 0;
 }

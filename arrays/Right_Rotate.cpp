@@ -36,5 +36,11 @@ int main()
     {
         arr[i] = temp[i];
     }
+
+    cout << "Array after right rotation: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
     return 0;
 }

@@ -17,5 +17,10 @@ int main()
     {
         cin >> arr[i];
     }
+
+    // Left rotate the array by d positions
+    d = d % n; // Handle cases where d is greater than n
+    int temp[d];
+    
     return 0;
 }

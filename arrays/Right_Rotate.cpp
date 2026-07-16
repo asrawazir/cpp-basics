@@ -26,5 +26,10 @@ int main()
     {
         temp[i] = arr[n - d + i];
     }
+
+    for (int i = n - 1; i >= d; i--)
+    {
+        arr[i] = arr[i - d];
+    }
     return 0;
 }

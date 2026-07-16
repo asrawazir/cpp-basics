@@ -32,11 +32,16 @@ int main()
         arr[i - d] = arr[i];
     }
     
-for (int i = 0; i < d; i++)
+    for (int i = 0; i < d; i++)
     {
         arr[n - d + i] = temp[i];
     }
 
-    
+    cout << "Array after left rotation: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
     return 0;
 }

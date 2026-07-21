@@ -24,6 +24,13 @@ int main() {
         cout << endl;
     }
 
+    int matrix2[rows][cols];
+    cout << "Enter the elements of the second matrix:" << endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cin >> matrix2[i][j];
+        }
+    }
 
     return 0;
 }

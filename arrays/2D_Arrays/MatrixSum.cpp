@@ -7,7 +7,7 @@ int main() {
     cin >> rows;
     cout << "Enter the number of columns: ";
     cin >> cols;
-    
+
     int matrix[rows][cols];
     cout << "Enter the elements of the matrix:" << endl;
     for (int i = 0; i < rows; i++) {
@@ -16,5 +16,12 @@ int main() {
         }
     }
     
+    int sum = 0;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            sum += matrix[i][j];
+        }
+    }
+    cout << "The sum of the elements in the matrix is: " << sum << endl;
     return 0;
 }

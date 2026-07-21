@@ -23,5 +23,13 @@ int main() {
         }
         cout << endl;
     }
+
+    cout << "The transpose of the matrix is:" << endl;
+    for (int j = 0; j < cols; j++) {
+        for (int i = 0; i < rows; i++) {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
     return 0;
 }

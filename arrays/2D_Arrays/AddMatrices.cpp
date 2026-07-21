@@ -16,10 +16,10 @@ int main() {
         }
     }
 
-    cout << "The matrix is:" << endl;
+    cout << "The first matrix is:" << endl;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            cout << matrix[i][j] << " ";
+            cout << matrix1[i][j] << " ";
         }
         cout << endl;
     }
@@ -30,6 +30,14 @@ int main() {
         for (int j = 0; j < cols; j++) {
             cin >> matrix2[i][j];
         }
+    }
+
+    cout << "The second matrix is:" << endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cout << matrix2[i][j] << " ";
+        }
+        cout << endl;
     }
 
     return 0;

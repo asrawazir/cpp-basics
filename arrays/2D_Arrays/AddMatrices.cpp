@@ -9,7 +9,7 @@ int main() {
     cin >> cols;
 
     int matrix[rows][cols];
-    cout << "Enter the elements of the matrix:" << endl;
+    cout << "Enter the elements of the first matrix:" << endl;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             cin >> matrix[i][j];
@@ -23,5 +23,7 @@ int main() {
         }
         cout << endl;
     }
+
+
     return 0;
 }

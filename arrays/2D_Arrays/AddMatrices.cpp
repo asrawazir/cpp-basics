@@ -4,12 +4,23 @@ using namespace std;
 int main() {
     const int MAX_ROWS = 100;
     const int MAX_COLS = 100;
-    
+
     int rows1, cols1;
     cout << "Enter the number of the first matrix rows: ";
     cin >> rows1;
     cout << "Enter the number of the first matrix columns: ";
     cin >> cols1;
+
+    int rows2, cols2;
+    cout << "Enter the number of the second matrix rows: ";
+    cin >> rows2;
+    cout << "Enter the number of the second matrix columns: ";
+    cin >> cols2;  
+
+    if (rows1 != rows2 || cols1 != cols2) {
+        cout << "\nMatrices must have the exact same dimensions to be added!" << endl;
+        return 1;
+    }
 
     int matrix1[rows1][cols1];
     cout << "Enter the elements of the first matrix:" << endl;
@@ -18,12 +29,6 @@ int main() {
             cin >> matrix1[i][j];
         }
     }
-
-    int rows2, cols2;
-    cout << "Enter the number of the second matrix rows: ";
-    cin >> rows2;
-    cout << "Enter the number of the second matrix columns: ";
-    cin >> cols2;
 
     int matrix2[rows2][cols2];
     cout << "Enter the elements of the second matrix:" << endl;

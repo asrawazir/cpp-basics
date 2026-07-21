@@ -24,17 +24,23 @@ int main() {
         cout << endl;
     }
 
-    int matrix2[rows][cols];
+    int rows2, cols2;
+    cout << "Enter the number of the second matrix rows: ";
+    cin >> rows2;
+    cout << "Enter the number of the second matrix columns: ";
+    cin >> cols2;
+
+    int matrix2[rows2][cols2];
     cout << "Enter the elements of the second matrix:" << endl;
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows2; i++) {
+        for (int j = 0; j < cols2; j++) {
             cin >> matrix2[i][j];
         }
     }
 
     cout << "The second matrix is:" << endl;
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows2; i++) {
+        for (int j = 0; j < cols2; j++) {
             cout << matrix2[i][j] << " ";
         }
         cout << endl;

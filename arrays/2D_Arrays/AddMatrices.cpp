@@ -6,15 +6,15 @@ int main() {
     const int MAX_COLS = 100;
 
     int rows1, cols1;
-    cout << "Enter the number of the first matrix rows: ";
+    cout << "Enter the number of rows of the first matrix: ";
     cin >> rows1;
-    cout << "Enter the number of the first matrix columns: ";
+    cout << "Enter the number of columns of the first matrix: ";
     cin >> cols1;
 
     int rows2, cols2;
-    cout << "Enter the number of the second matrix rows: ";
+    cout << "Enter the number of rows of the second matrix: ";
     cin >> rows2;
-    cout << "Enter the number of the second matrix columns: ";
+    cout << "Enter the number of columns of the second matrix: ";
     cin >> cols2;  
 
     if (rows1 != rows2 || cols1 != cols2) {
@@ -23,7 +23,7 @@ int main() {
     }
 
     if (rows1 > MAX_ROWS || cols1 > MAX_COLS || rows1 <= 0 || cols1 <= 0) {
-        cout << "\nError: Dimensions must be between 1 and " << MAX_ROWS << "." << endl;
+        cout << "Dimensions must be between 1 and " << MAX_ROWS << "." << endl;
         return 1;
     }
 

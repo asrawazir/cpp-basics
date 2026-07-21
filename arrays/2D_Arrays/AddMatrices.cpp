@@ -35,7 +35,7 @@ int main() {
         }
     }
 
-    int matrix2[rows2][cols2];
+    int matrix2[MAX_ROWS][MAX_COLS];
     cout << "Enter the elements of the second matrix:" << endl;
     for (int i = 0; i < rows2; i++) {
         for (int j = 0; j < cols2; j++) {

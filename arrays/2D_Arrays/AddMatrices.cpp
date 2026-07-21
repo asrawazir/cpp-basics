@@ -2,26 +2,18 @@
 using namespace std;
 
 int main() {
-    int rows, cols;
+    int rows1, cols1;
     cout << "Enter the number of the first matrix rows: ";
-    cin >> rows;
+    cin >> rows1;
     cout << "Enter the number of the first matrix columns: ";
-    cin >> cols;
+    cin >> cols1;
 
-    int matrix1[rows][cols];
+    int matrix1[rows1][cols1];
     cout << "Enter the elements of the first matrix:" << endl;
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols1; j++) {
             cin >> matrix1[i][j];
         }
-    }
-
-    cout << "The first matrix is:" << endl;
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            cout << matrix1[i][j] << " ";
-        }
-        cout << endl;
     }
 
     int rows2, cols2;
@@ -38,24 +30,16 @@ int main() {
         }
     }
 
-    cout << "The second matrix is:" << endl;
-    for (int i = 0; i < rows2; i++) {
-        for (int j = 0; j < cols2; j++) {
-            cout << matrix2[i][j] << " ";
-        }
-        cout << endl;
-    }
-
-    int sumMatrix[rows][cols];
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+    int sumMatrix[rows1][cols1];
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols1; j++) {
             sumMatrix[i][j] = matrix1[i][j] + matrix2[i][j];
         }
     }
 
     cout << "The sum of the two matrices is:" << endl;
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols1; j++) {
             cout << sumMatrix[i][j] << " ";
         }
         cout << endl;

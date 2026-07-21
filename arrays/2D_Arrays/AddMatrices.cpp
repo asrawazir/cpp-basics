@@ -43,7 +43,7 @@ int main() {
         }
     }
 
-    int sumMatrix[rows1][cols1];
+    int sumMatrix[MAX_ROWS][MAX_COLS];
     for (int i = 0; i < rows1; i++) {
         for (int j = 0; j < cols1; j++) {
             sumMatrix[i][j] = matrix1[i][j] + matrix2[i][j];

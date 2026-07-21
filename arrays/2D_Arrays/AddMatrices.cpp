@@ -50,7 +50,7 @@ int main() {
         }
     }
 
-    cout << "The sum of the two matrices is:" << endl;
+    cout << "\nThe sum of the two matrices is:" << endl;
     for (int i = 0; i < rows1; i++) {
         for (int j = 0; j < cols1; j++) {
             cout << sumMatrix[i][j] << " ";

@@ -26,8 +26,8 @@ int main() {
         cout << "\nError: Dimensions must be between 1 and " << MAX_ROWS << "." << endl;
         return 1;
     }
-    
-    int matrix1[rows1][cols1];
+
+    int matrix1[MAX_ROWS][MAX_COLS];
     cout << "Enter the elements of the first matrix:" << endl;
     for (int i = 0; i < rows1; i++) {
         for (int j = 0; j < cols1; j++) {

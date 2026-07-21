@@ -12,7 +12,7 @@ int main() {
     cout << "Enter the elements of the first matrix:" << endl;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            cin >> matrix[i][j];
+            cin >> matrix1[i][j];
         }
     }
 

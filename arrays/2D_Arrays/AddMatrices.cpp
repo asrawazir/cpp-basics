@@ -8,7 +8,7 @@ int main() {
     cout << "Enter the number of columns: ";
     cin >> cols;
 
-    int matrix[rows][cols];
+    int matrix1[rows][cols];
     cout << "Enter the elements of the first matrix:" << endl;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {

@@ -3,9 +3,9 @@ using namespace std;
 
 int main() {
     int rows, cols;
-    cout << "Enter the number of rows: ";
+    cout << "Enter the number of the first matrix rows: ";
     cin >> rows;
-    cout << "Enter the number of columns: ";
+    cout << "Enter the number of the first matrix columns: ";
     cin >> cols;
 
     int matrix1[rows][cols];

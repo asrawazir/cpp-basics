@@ -12,5 +12,10 @@ int main() {
     cout << "Enter the number of columns of the first matrix: ";
     cin >> cols1;
 
+    int rows2, cols2;
+    cout << "Enter the number of rows of the second matrix: ";
+    cin >> rows2;
+    cout << "Enter the number of columns of the second matrix: ";
+    cin >> cols2; 
     return 0;
 }

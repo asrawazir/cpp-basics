@@ -22,5 +22,13 @@ int main() {
         cout << "Columns of the first matrix must match rows of the second matrix!" << endl;
         return 1;
     }
+
+    int A[MAX_ROWS][MAX_COLS];
+    cout << "Enter elements of the first matrix (" << rows1 << "x" << cols1 << "):" << endl;
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols1; j++) {
+            cin >> A[i][j];
+        }
+    }
     return 0;
 }

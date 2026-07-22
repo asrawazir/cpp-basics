@@ -19,7 +19,7 @@ int main() {
     cin >> cols2; 
 
     if (cols1 != rows2) {
-        cout << "Columns of the first matrix must match rows of the second matrix!" << endl;
+        cout << "\nColumns of the first matrix must match rows of the second matrix!" << endl;
         return 1;
     }
 

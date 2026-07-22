@@ -30,5 +30,13 @@ int main() {
             cin >> A[i][j];
         }
     }
+
+    int B[MAX_ROWS][MAX_COLS];
+    cout << "Enter elements of the second matrix (" << rows2 << "x" << cols2 << "):" << endl;
+    for (int i = 0; i < rows2; i++) {
+        for (int j = 0; j < cols2; j++) {
+            cin >> B[i][j];
+        }
+    }
     return 0;
 }

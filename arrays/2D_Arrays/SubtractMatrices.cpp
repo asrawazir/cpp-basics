@@ -16,5 +16,10 @@ int main() {
     cin >> rows2;
     cout << "Enter the number of columns of the second matrix: ";
     cin >> cols2;  
+
+    if (rows1 != rows2 || cols1 != cols2) {
+        cout << "\nMatrices must have the exact same dimensions to be subtracted!" << endl;
+        return 1;
+    }
     return 0;
 }

@@ -49,5 +49,13 @@ int main() {
             diffMatrix[i][j] = matrix1[i][j] - matrix2[i][j];
         }
     }
+
+    cout << "\nThe difference of the two matrices is:" << endl;
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols1; j++) {
+            cout << diffMatrix[i][j] << " ";
+        }
+        cout << endl;
+    }
     return 0;
 }

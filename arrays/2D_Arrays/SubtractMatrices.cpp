@@ -21,5 +21,10 @@ int main() {
         cout << "\nMatrices must have the exact same dimensions to be subtracted!" << endl;
         return 1;
     }
+
+    if (rows1 > MAX_ROWS || cols1 > MAX_COLS || rows1 <= 0 || cols1 <= 0) {
+        cout << "Dimensions must be between 1 and " << MAX_ROWS << "." << endl;
+        return 1;
+    }
     return 0;
 }

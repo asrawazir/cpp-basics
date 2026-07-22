@@ -38,5 +38,15 @@ int main() {
             cin >> B[i][j];
         }
     }
+
+    int C[MAX_ROWS][MAX_COLS];
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols2; j++) {
+            C[i][j] = 0; // Initialize cell
+            for (int k = 0; k < cols1; k++) {
+                C[i][j] += A[i][k] * B[k][j];
+            }
+        }
+    }
     return 0;
 }

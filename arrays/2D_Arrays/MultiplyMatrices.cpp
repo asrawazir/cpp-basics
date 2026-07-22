@@ -48,5 +48,13 @@ int main() {
             }
         }
     }
+
+    cout << "Resultant Matrix (" << rows1 << "x" << cols2 << "):" << endl;
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols2; j++) {
+            cout << C[i][j] << " ";
+        }
+        cout << endl;
+    }
     return 0;
 }

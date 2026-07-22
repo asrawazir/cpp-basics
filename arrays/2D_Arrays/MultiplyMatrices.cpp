@@ -17,5 +17,10 @@ int main() {
     cin >> rows2;
     cout << "Enter the number of columns of the second matrix: ";
     cin >> cols2; 
+
+    if (cols1 != rows2) {
+        cout << "Columns of the first matrix must match rows of the second matrix!" << endl;
+        return 1;
+    }
     return 0;
 }
